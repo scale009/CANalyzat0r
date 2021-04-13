@@ -16,8 +16,7 @@ sudo apt -y install \
    git \
    iproute2 \
    python3-pip \
-   python3-pyside \
-   python3.5
+
 
 # Pip dependencies
 sudo pip3 install --upgrade pip
@@ -27,6 +26,7 @@ sudo pip3 install pipenv
 cd $DIR
 mkdir -p pipenv && cd pipenv
 pipenv --three
-pipenv install -e 'git+https://github.com/hardbyte/python-can.git@3.3.2#egg=can'
+
+pipenv install python-can
 pipenv install sphinx_rtd_theme
-cp -rf /usr/lib/python3/dist-packages/PySide $(pipenv --venv)/lib/python3*/site-packages
+pipenv install pyside2
