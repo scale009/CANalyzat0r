@@ -23,7 +23,7 @@ Created on May 17, 2017
 
 import sqlite3
 import os
-from PySide.QtGui import QMessageBox, QInputDialog
+from PySide.QtWidgets import QMessageBox, QInputDialog
 from PySide import QtCore
 
 import Toolbox
